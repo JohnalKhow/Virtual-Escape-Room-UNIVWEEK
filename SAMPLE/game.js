@@ -3,6 +3,12 @@ var modal = document.getElementById("myModal");
 var video = document.getElementById("video1");
 var watched = false;
 
+//INIT AUDIO FILES 
+//CONTROLLED BY .play() function
+var sound = new Audio('assets/audio/audiofile.mp3');
+
+
+
 //INITIALIZE ALL OBJECTS
 window.onload = function() {
 
