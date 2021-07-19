@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Virtual Escape Room</title>
+    <link rel="stylesheet" type="text/css" href="ComputerLab.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <canvas id="ipad" class="object" width="185 " height="200" style=" top:22vw; left:20vw; position: absolute;"></canvas>
+            <video controls id="video1" style="width: 100%; height: 100%; margin-left: 1%; display: none;">
+                <source src="assets/videos/placeholder.mp4" type="video/mp4">
+            </video>
+            <img id="threat" src="assets/images/threat.png" style="width: 100%; height: 90%;">
+        </div>
+    </div>
+
+
+    <img id="bg" src="assets/images/ComputerLab.png">
+
+    <canvas id="gameboard" class="object" width="60" height="60" style=" top:35vw; left:84vw; position: absolute;"></canvas>
+    <canvas id="usb" class="object" width="60" height="60" style=" top:29.5vw; left:21vw; position: absolute;"></canvas>
+
+
+</body>
+<script src="ComputerLab.js"></script>
+<script src="jquery-3.5.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+</script>
+
+</html>
