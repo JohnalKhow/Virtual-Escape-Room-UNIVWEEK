@@ -20,6 +20,13 @@ body {
     margin-top: 2vw;
 }
 
+#announcement {
+    color: white;
+    display: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
 .modal {
     display: none;
     position: fixed;

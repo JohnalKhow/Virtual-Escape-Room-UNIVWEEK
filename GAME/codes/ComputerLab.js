@@ -4,6 +4,7 @@ var video = document.getElementById("video1");
 var btn = document.getElementById("btn");
 var img = document.getElementById("threat");
 var video = document.getElementById("video1");
+var announce = document.getElementById("announcement");
 var check = false;
 
 //INIT AUDIO FILES 
@@ -19,11 +20,11 @@ window.onload = function() {
     sound.play();
     var c = document.getElementById("gameboard");
     var ctx = c.getContext("2d");
-    ctx.strokeRect(0, 10, 30, 30);
+    ctx.clearRect(0, 10, 30, 30);
 
     var b = document.getElementById("usb");
     var ctx = b.getContext("2d");
-    ctx.strokeRect(0, 10, 30, 20);
+    ctx.clearRect(0, 10, 30, 20);
 };
 
 //EVENT LISTENERS
@@ -46,10 +47,19 @@ usb.addEventListener('click', (event) => {
         modal.style.width = "50%";
         modal.style.left = "25vw";
         modal.style.top = "7vw";
-        video1.style.display = "block";
+        video.style.display = "block";
         video.play();
     }
 
+});
+
+video.addEventListener("ended", event => {
+    video.style.display = "none";
+    modal.style.width = "50%";
+    modal.style.left = "25vw";
+    modal.style.top = "7vw";
+    announce.style.display = "block";
+    span.style.display = "none";
 });
 
 //MODAL HANDLING
@@ -58,6 +68,7 @@ span.onclick = function() {
     video.currentTime = 0;
     video.pause();
 }
+
 
 window.onclick = function(event) {
     if (event.target == modal) {
