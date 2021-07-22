@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Desktop</title>
+    <link rel="stylesheet" type="text/css" href="desktop.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="back" style="top:20vw; left: 29vw; position: fixed;">&LessLess;</span>
+            <img id="user" src="assets/images/userSmall.png" style="top:23vw; left: 46.8vw; position: fixed;">
+            <div class="modal-header" style="color: black; top:26vw; left: 44vw; position: fixed;">
+                <h5 class="modal-title">Administrator</h5>
+            </div>
+            <div class="input-group" style="text-align: center; color: black; top:33vw; left: 39vw; position: fixed;">
+                <input id="password" class="form-control" placeholder="Password" name="email" style="font-size: x-large;">
+                <input id="btn" type="submit" class="btn-control" value="ENTER" style="font-size: x-large;">
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <img id="desktop" src="assets/images/desktop_new.png">
+
+    <canvas id="gameboard" class="object" width="100" height="125" style=" top:11vw; left: 21.5vw; position: absolute;"></canvas>
+
+</body>
+
+<script src="desktop.js"></script>
+<script src="jquery-3.5.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cafe</title>
+    <link rel="stylesheet" type="text/css" href="cafe.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="barista" src="assets/images/Barista.jpg" class="img-responsive">
+            <img id="coffee" src="assets/images/Latte.jpg" class="img-responsive">
+            <img id="coffee2" src="assets/images/Empty cup with key.jpg" class="img-responsive">
+
+            <div class="input-group">
+                <input id="order" class="form-control" placeholder="Order" name="email" style="font-size: xx-large;">
+                <input id="btn" type="submit" class="btn-control" value="ENTER" style="font-size: xx-large;">
+            </div>
+            <canvas id="drink" class="object" width="410" height="410" style="top:5vw; left: 33.5vw; position: relative;"></canvas>
+            <canvas id="key" class="object" width="110" height="90" style="top:-3.5vw; left: 17vw; position: relative;"></canvas>
+        </div>
+    </div>
+
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close2">&times;</span>
+            <img id="clue" src="assets/images/Clue.png" class="img-responsive">
+        </div>
+    </div>
+
+    <img id="cafe" src="assets/images/Cafe.jpg">
+
+    <canvas id="gameboard" class="object" width="30" height="70" style=" top:25vw; left: 18vw; position: absolute;"></canvas>
+    <canvas id="gameboard2" class="object" width="150" height="250" style=" top:30vw; left:57vw; position: absolute;"></canvas>
+
+
+
+
+</body>
+<script src="cafe.js"></script>
+<script src="jquery-3.5.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+</script>
+
+</html>

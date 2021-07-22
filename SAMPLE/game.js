@@ -15,7 +15,8 @@ window.onload = function() {
     //EACH OBJECT MUST HAVE A CORRESPONDING CANVAS 
     var c = document.getElementById("gameboard");
     var ctx = c.getContext("2d");
-    ctx.clearRect(0, 10, 50, 50);
+    ctx.rect(0, 10, 50, 50);
+    ctx.stroke();
 
     var c = document.getElementById("gameboard2");
     var ctx = c.getContext("2d");
