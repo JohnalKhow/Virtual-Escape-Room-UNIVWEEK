@@ -4,6 +4,7 @@ var video = document.getElementById("video1");
 var btn = document.getElementById("btn");
 var img = document.getElementById("threat");
 var video = document.getElementById("video1");
+var video2 = document.getElementById("video2");
 var announce = document.getElementById("announcement");
 var check = false;
 
@@ -48,6 +49,7 @@ usb.addEventListener('click', (event) => {
         modal.style.left = "25vw";
         modal.style.top = "7vw";
         video.style.display = "block";
+        span.style.display = "none";
         video.play();
     }
 
@@ -55,6 +57,12 @@ usb.addEventListener('click', (event) => {
 
 video.addEventListener("ended", event => {
     video.style.display = "none";
+    video2.style.display = "block";
+    video2.play();
+});
+
+video2.addEventListener("ended", event => {
+    video2.style.display = "none";
     modal.style.width = "50%";
     modal.style.left = "25vw";
     modal.style.top = "7vw";
@@ -65,15 +73,4 @@ video.addEventListener("ended", event => {
 //MODAL HANDLING
 span.onclick = function() {
     modal.style.display = "none";
-    video.currentTime = 0;
-    video.pause();
-}
-
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-        video.currentTime = 0;
-        video.pause();
-    }
 }
