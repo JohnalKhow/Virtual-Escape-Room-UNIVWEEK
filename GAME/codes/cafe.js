@@ -68,7 +68,7 @@ barista2.addEventListener('ended', (event) => {
     coffee2.style.display = "none";
     var c3 = document.getElementById("drink");
     var ctx3 = c3.getContext("2d");
-    ctx3.strokeRect(0, 10, 400, 400);
+    ctx3.clearRect(0, 10, 400, 400);
     ordered = true;
 });
 

@@ -21,11 +21,11 @@ window.onload = function() {
     sound.play();
     var c = document.getElementById("gameboard");
     var ctx = c.getContext("2d");
-    ctx.clearRect(0, 10, 30, 30);
+    ctx.strokeRect(0, 10, 30, 30);
 
     var b = document.getElementById("usb");
     var ctx = b.getContext("2d");
-    ctx.clearRect(0, 10, 30, 20);
+    ctx.strokeRect(0, 10, 30, 20);
 };
 
 //EVENT LISTENERS

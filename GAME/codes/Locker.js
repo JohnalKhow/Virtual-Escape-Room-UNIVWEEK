@@ -4,7 +4,7 @@ var watched = false;
 var lockerbg = document.getElementById("theatre");
 //INIT AUDIO FILES 
 //CONTROLLED BY .play() function
-var sound = new Audio('assets/audio/assets/audio/Classroom, Faculty Room, Computer Lab.mp3.mp3');
+var sound = new Audio('assets/audio/Classroom, Faculty Room, Computer Lab.mp3');
 sound.loop = true;
 
 //INITIALIZE ALL OBJECTS
@@ -20,7 +20,7 @@ window.onload = function() {
 
 //EACH OBJECT MUST HAVE A CORRESPONDING EVENT LISTENER
 lock.addEventListener('click', (event) => {
-        modal.style.display = "block";
+    modal.style.display = "block";
 });
 
 //MODAL HANDLING
@@ -31,9 +31,9 @@ span.onclick = function() {
 }
 
 
-function getInputValue(){
+function getInputValue() {
     var inputVal = document.getElementById("inputPassword").value;
-    if(inputVal == "0545") {
+    if (inputVal == "0545") {
         modal.style.display = "none";
 
         lockerbg.src = "assets/images/locker-w-key.jpg";
@@ -45,7 +45,7 @@ function getInputValue(){
 }
 
 getKey.addEventListener('click', (event) => {
-    window.location.href="Doorknob.html"
+    window.location.href = "Doorknob.html"
 });
 
 window.onclick = function(event) {
@@ -53,4 +53,3 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-
