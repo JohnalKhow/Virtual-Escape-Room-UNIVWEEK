@@ -1,0 +1,66 @@
+#gameboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+#class {
+    margin-top: 5.5vw;
+    margin-left: 16.65vw;
+    width: 1280px;
+    height: 720px;
+    position: absolute;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    left: 635px;
+    top: 270px;
+    width: 700px;
+}
+
+.doorModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    color: white;
+    text-align:center;
+    font-size: 20px;
+    left: 450px;
+    top: 75px;
+    width: 1000px;
+}
+
+.modal-content {
+    background-color: black;
+    margin: 7% auto;
+    padding: 1px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

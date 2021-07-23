@@ -1,0 +1,17 @@
+#gameboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+#theatre {
+    margin-top: 5.5vw;
+    margin-left: 16.65vw;
+    width: 1280px;
+    height: 720px;
+}

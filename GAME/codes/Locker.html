@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trial</title>
+    <link rel="stylesheet" type="text/css" href="Locker.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="lockImage" width="200" src="assets/images/lock.png" style="float:left">
+            <p style = "color: white">Enter Password: <input id="inputPassword" type="text"></p>
+            <button type="button" onclick="getInputValue();">Enter</button>
+        </div>
+
+    </div>
+
+    <img id="theatre" src="assets/images/locker.jpg">
+
+
+    <canvas id="lock" class="object" width="35 " height="49" style=" top:22.8vw; left:42.6vw; position: absolute;"></canvas>
+    <canvas id="getKey" class="object" width="60 " height="30" style=" top:33.3vw; left:42.8vw; position: absolute;"></canvas>
+
+
+
+</body>
+<script src="Locker.js"></script>
+<script src="jquery-3.5.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+</script>
+
+</html>
