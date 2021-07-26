@@ -1,19 +1,18 @@
 var span = document.getElementsByClassName("back")[0];
 var modal = document.getElementById("myModal");
+var modalVid = document.getElementById("modalVid");
+var video = document.getElementById("video1");
 var btn = document.getElementById("btn");
+var vidplayer = document.getElementById("vidplayer");
 var logged = false;
 var listened = false;
-
-//INIT AUDIO FILES 
-//CONTROLLED BY .play() function
-var sound = new Audio('assets/audio/Desktop.mp3');
 
 
 //INITIALIZE ALL OBJECTS
 window.onload = function() {
     modal.style.display = "block";
-
-
+    modalVid.style.display = "none";
+    vidplayer.style.display = "none";
 };
 
 btn.onclick = function() {
@@ -33,9 +32,10 @@ btn.onclick = function() {
 gameboard.addEventListener('click', (event) => {
     console.log('clicked canvas');
     if (logged) {
-        sound.play();
+        vidplayer.style.display = "block";
+        modalVid.style.display = "block";
+        video.play();
         listen = true;
-
     }
 });
 
@@ -43,6 +43,6 @@ span.onclick = function() {
     window.location.href = "Library.html";
 }
 
-sound.addEventListener('ended', (event) => {
+video.addEventListener('ended', (event) => {
     window.location.href = "Cafe.html";
 });

@@ -16,22 +16,26 @@ var barista1 = new Audio('assets/audio/Barista 1.mp3');
 var student = new Audio('assets/audio/Student Detective Audio.mp3');
 var barista2 = new Audio('assets/audio/Barista 2.mp3');
 var cafemusic = new Audio('assets/audio/Cafe.mp3');
+cafemusic.loop = true;
 
 //INITIALIZE ALL OBJECTS
 window.onload = function() {
 
     cafemusic.play();
-    cafemusic.loop();
     //EACH OBJECT MUST HAVE A CORRESPONDING CANVAS 
     var c = document.getElementById("gameboard");
     var ctx = c.getContext("2d");
-    ctx.rect(0, 10, 50, 50);
-    ctx.stroke();
+    ctx.strokeStyle = 'yellow';
+    ctx.strokeRect(0, 10, 75, 50);
+
+
 
     var c2 = document.getElementById("gameboard2");
     var ctx2 = c2.getContext("2d");
-    ctx2.rect(0, 10, 125, 200);
-    ctx2.stroke();
+    ctx2.strokeStyle = 'yellow';
+    ctx2.strokeRect(0, 10, 200, 350);
+
+
 
 };
 
@@ -79,7 +83,7 @@ drink.addEventListener('click', (event) => {
         coffee2.style.display = "block";
         var c4 = document.getElementById("key");
         var ctx4 = c4.getContext("2d");
-        ctx4.strokeRect(0, 10, 100, 80);
+        ctx4.clearRect(0, 10, 100, 80);
         drank = true;
     }
 });
@@ -105,6 +109,13 @@ btn.onclick = function() {
 //MODAL HANDLING
 span.onclick = function() {
     modal.style.display = "none";
+    barista1.pause();
+    barista2.pause();
+    student.pause();
+    barista1.currentTime = 0;
+    barista2.currentTime = 0;
+    student.currentTime = 0;
+
 }
 
 span2.onclick = function() {
@@ -115,5 +126,11 @@ window.onclick = function(event) {
     if (event.target == modal || event.target == modal2) {
         modal.style.display = "none";
         modal2.style.display = "none";
+        barista1.pause();
+        barista2.pause();
+        student.pause();
+        barista1.currentTime = 0;
+        barista2.currentTime = 0;
+        student.currentTime = 0;
     }
 }

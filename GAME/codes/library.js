@@ -7,23 +7,23 @@ var watched = false;
 //INIT AUDIO FILES 
 //CONTROLLED BY .play() function
 var sound = new Audio('assets/audio/Library.mp3');
-
+sound.loop = true;
 
 //INITIALIZE ALL OBJECTS
 window.onload = function() {
 
     sound.play();
-    sound.loop();
     //EACH OBJECT MUST HAVE A CORRESPONDING CANVAS 
     var c = document.getElementById("gameboard");
     var ctx = c.getContext("2d");
-    ctx.rect(0, 10, 50, 50);
-    ctx.stroke();
+    ctx.strokeStyle = 'yellow';
+    ctx.strokeRect(0, 10, 75, 90);
 
-    var c = document.getElementById("gameboard2");
-    var ctx = c.getContext("2d");
-    ctx.rect(0, 10, 225, 125);
-    ctx.stroke();
+    var c2 = document.getElementById("gameboard2");
+    var ctx2 = c2.getContext("2d");
+    ctx2.strokeStyle = 'yellow';
+    ctx2.strokeRect(0, 10, 250, 200);
+
 };
 
 //EVENT LISTENERS
@@ -35,7 +35,7 @@ gameboard.addEventListener('click', (event) => {
 
 gameboard2.addEventListener('click', (event) => {
     console.log('clicked canvas');
-    window.open("Desktop.html", "_self");
+    window.location.href = "Desktop.html";
 });
 
 

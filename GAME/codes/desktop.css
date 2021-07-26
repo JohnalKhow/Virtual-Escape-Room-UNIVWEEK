@@ -38,6 +38,18 @@ body {
     height: 50%;
 }
 
+.modal-content-2 {
+    position: absolute;
+    top: -15vw;
+    left: 10vw;
+    background-color: black;
+    margin: 19% auto;
+    padding: 50px;
+    border: 1px solid #888;
+    width: 40%;
+    height: 50%;
+}
+
 .back {
     color: black;
     float: right;
