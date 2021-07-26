@@ -23,8 +23,7 @@ btn.onclick = function() {
         console.log("if entered");
         var c = document.getElementById("gameboard");
         var ctx = c.getContext("2d");
-        ctx.rect(0, 10, 70, 90);
-        ctx.stroke();
+        ctx.clearRect(0, 10, 70, 90);
         logged = true;
     }
 }

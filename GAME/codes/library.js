@@ -16,13 +16,11 @@ window.onload = function() {
     //EACH OBJECT MUST HAVE A CORRESPONDING CANVAS 
     var c = document.getElementById("gameboard");
     var ctx = c.getContext("2d");
-    ctx.strokeStyle = 'yellow';
-    ctx.strokeRect(0, 10, 75, 90);
+    ctx.clearRect(0, 10, 75, 90);
 
     var c2 = document.getElementById("gameboard2");
     var ctx2 = c2.getContext("2d");
-    ctx2.strokeStyle = 'yellow';
-    ctx2.strokeRect(0, 10, 250, 200);
+    ctx2.clearRect(0, 10, 250, 200);
 
 };
 
