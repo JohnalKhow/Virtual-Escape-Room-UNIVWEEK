@@ -18,7 +18,7 @@ window.onload = function() {
     sound.play();
     var c = document.getElementById("gameboard");
     var ctx = c.getContext("2d");
-    ctx.clearRect(0, 10, 170, 160);
+    ctx.clearRect(0, 10, 255, 250);
 };
 
 //EVENT LISTENERS
