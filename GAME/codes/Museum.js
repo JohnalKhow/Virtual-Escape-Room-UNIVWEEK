@@ -2,6 +2,8 @@ var span = document.getElementsByClassName("close")[0];
 var modal = document.getElementById("myModal");
 var video = document.getElementById("video1");
 var btn = document.getElementById("btn");
+var image = document.getElementById("safe");
+var form = document.getElementById("form");
 var watched = false;
 
 //INIT AUDIO FILES 
@@ -31,10 +33,14 @@ gameboard.addEventListener('click', (event) => {
 
 ipad.addEventListener('click', (event) => {
     sound.pause();
-    VA.play();
+    video.style.display = "block";
+    btn.style.display = "none";
+    form.style.display = "none";
+    image.style.display = "none";
+    video.play();
 });
 
-VA.addEventListener("ended", event => {
+video.addEventListener("ended", event => {
     window.location.href = "ComputerLab.html";
 });
 
@@ -53,7 +59,7 @@ btn.onclick = function() {
         document.getElementById("safe").src = "assets/images/open-safe.jpg";
         var b = document.getElementById("ipad");
         var ctx = b.getContext("2d");
-        ctx.strokeRect(0, 10, 170, 160);
+        ctx.clearRect(0, 10, 170, 160);
     }
 }
 
