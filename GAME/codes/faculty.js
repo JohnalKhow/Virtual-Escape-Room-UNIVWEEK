@@ -10,18 +10,17 @@ var watched = false;
 //INIT AUDIO FILES 
 //CONTROLLED BY .play() function
 var sound = new Audio('assets/audio/Classroom, Faculty Room, Computer Lab.mp3');
-
+sound.loop = true;
 //INITIALIZE ALL OBJECTS
 window.onload = function() {
     sound.play();
-    sound.loop();
     code.style.display = "none";
     btn.style.display = "none";
     passage.style.display = "none";
     pigpen.style.display = "none";
     var c = document.getElementById("gameboard");
     var ctx = c.getContext("2d");
-    ctx.strokeRect(0, 10, 175, 50);
+    ctx.clearRect(0, 10, 250, 75);
 };
 
 //EVENT LISTENERS
@@ -56,7 +55,7 @@ btn.onclick = function() {
         encoded = true;
         var c2 = document.getElementById("note1");
         var ctx2 = c2.getContext("2d");
-        ctx2.strokeRect(0, 10, 790, 560);
+        ctx2.clearRect(0, 10, 790, 560);
     }
 }
 
