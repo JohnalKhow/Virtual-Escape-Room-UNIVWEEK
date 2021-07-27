@@ -20,7 +20,7 @@ window.onload = function() {
     sound.play();
     var c = document.getElementById("gameboard");
     var ctx = c.getContext("2d");
-    ctx.strokeRect(0, 10, 255, 250);
+    ctx.clearRect(0, 10, 255, 250);
 };
 
 //EVENT LISTENERS
