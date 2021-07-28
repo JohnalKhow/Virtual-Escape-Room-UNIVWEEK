@@ -13,7 +13,7 @@ window.onload = function() {
     //EACH OBJECT MUST HAVE A CORRESPONDING CANVAS 
     var c = document.getElementById("lock");
     var ctx = c.getContext("2d");
-    ctx.strokeRect(0, 0, 35, 49);
+    ctx.clearRect(0, 0, 52, 70);
 };
 
 //EVENT LISTENERS
@@ -39,7 +39,7 @@ function getInputValue() {
         lockerbg.src = "assets/images/locker-w-key.jpg";
         var c = document.getElementById("getKey");
         var ctx = c.getContext("2d");
-        ctx.strokeRect(0, 0, 60, 30);
+        ctx.clearRect(0, 0, 93, 40);
     }
 
 }

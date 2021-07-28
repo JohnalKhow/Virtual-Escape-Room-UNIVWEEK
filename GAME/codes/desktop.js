@@ -6,13 +6,15 @@ var btn = document.getElementById("btn");
 var vidplayer = document.getElementById("vidplayer");
 var logged = false;
 var listened = false;
-
+var sound = new Audio('assets/audio/Library.mp3');
+sound.loop = true;
 
 //INITIALIZE ALL OBJECTS
 window.onload = function() {
     modal.style.display = "block";
     modalVid.style.display = "none";
     vidplayer.style.display = "none";
+    sound.play();
 };
 
 btn.onclick = function() {
@@ -23,7 +25,7 @@ btn.onclick = function() {
         console.log("if entered");
         var c = document.getElementById("gameboard");
         var ctx = c.getContext("2d");
-        ctx.clearRect(0, 10, 70, 90);
+        ctx.strokeRect(0, 10, 70, 90);
         logged = true;
     }
 }
@@ -33,6 +35,7 @@ gameboard.addEventListener('click', (event) => {
     if (logged) {
         vidplayer.style.display = "block";
         modalVid.style.display = "block";
+        sound.pause();
         video.play();
         listen = true;
     }

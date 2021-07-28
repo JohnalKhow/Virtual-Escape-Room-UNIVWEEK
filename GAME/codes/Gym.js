@@ -7,7 +7,6 @@ var doorModal = document.getElementById("doorModal");
 var doorRiddle = false;
 //INIT AUDIO FILES 
 //CONTROLLED BY .play() function
-var sound = new Audio('assets/audio/Gym-Auditorium - V1.mp3');
 var backmusic = new Audio('assets/audio/Auditorium.mp3')
 backmusic.volume = 0.2;
 backmusic.loop = true;
@@ -17,23 +16,23 @@ window.onload = function() {
     //EACH OBJECT MUST HAVE A CORRESPONDING CANVAS 
     var c = document.getElementById("gameboard");
     var ctx = c.getContext("2d");
-    ctx.strokeRect(0, 10, 50, 50);
+    ctx.clearRect(0, 0, 85, 75);
 
     var c = document.getElementById("gameboard2");
     var ctx = c.getContext("2d");
-    ctx.clearRect(0, 10, 50, 80);
+    ctx.clearRect(0, 0, 50, 110);
 
     var c = document.getElementById("gameboard3");
     var ctx = c.getContext("2d");
-    ctx.clearRect(0, 10, 60, 60);
+    ctx.clearRect(0, 0, 85, 75);
 
     var c = document.getElementById("gameboard4");
     var ctx = c.getContext("2d");
-    ctx.clearRect(0, 10, 50, 80);
+    ctx.clearRect(0, 0, 50, 110);
 
     var c = document.getElementById("door");
     var ctx = c.getContext("2d");
-    ctx.clearRect(0, 10, 70, 130);
+    ctx.clearRect(0, 0, 100, 250);
 
     var c = document.getElementById("door1");
     var ctx = c.getContext("2d");
@@ -126,10 +125,6 @@ span.onclick = function() {
 video.onended = function() {
     watched = true;
     modal.style.display = "none";
-    sound.play();
-}
-
-sound.onended = function() {
     heard = true;
 }
 

@@ -10,10 +10,8 @@ body {
 }
 
 #desktop {
-    margin-top: 5.5vw;
-    margin-left: 16.65vw;
-    width: 1280px;
-    height: 720px;
+    width: 1900px;
+    height: 1050px;
 }
 
 .modal {
