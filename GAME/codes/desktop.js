@@ -9,13 +9,13 @@ var listened = false;
 var sound = new Audio('assets/audio/Library.mp3');
 sound.loop = true;
 
-
 //INITIALIZE ALL OBJECTS
 window.onload = function() {
     sound.play();
     modal.style.display = "block";
     modalVid.style.display = "none";
     vidplayer.style.display = "none";
+    sound.play();
 };
 
 btn.onclick = function() {
@@ -38,6 +38,7 @@ gameboard.addEventListener('click', (event) => {
         sound.currentTime = 0;
         vidplayer.style.display = "block";
         modalVid.style.display = "block";
+        sound.pause();
         video.play();
         listen = true;
     }

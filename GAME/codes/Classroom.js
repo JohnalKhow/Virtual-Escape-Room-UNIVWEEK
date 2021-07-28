@@ -17,7 +17,7 @@ window.onload = function() {
     //EACH OBJECT MUST HAVE A CORRESPONDING CANVAS 
     var c = document.getElementById("GIcon");
     var ctx = c.getContext("2d");
-    ctx.clearRect(0, 0, 15, 15);
+    ctx.clearRect(0, 0, 20, 20);
 };
 
 //EVENT LISTENERS
@@ -27,15 +27,6 @@ GIcon.addEventListener('click', (event) => {
     console.log('clicked canvas');
     sound.play();
 });
-
-door.addEventListener('click', (event) => {
-    if (watched) {
-        console.log('NEXT SCENE');
-        doorModal.style.display = "block";
-        doorRiddle=true;
-    }
-});
-
 
 //MODAL HANDLING
 
