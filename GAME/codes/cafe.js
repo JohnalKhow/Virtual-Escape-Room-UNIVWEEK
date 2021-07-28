@@ -63,6 +63,7 @@ student.addEventListener('ended', (event) => {
 barista1.addEventListener('ended', (event) => {
     form.style.display = "block";
     btn.style.display = "block";
+    cafemusic.pause();
 });
 
 barista2.addEventListener('ended', (event) => {
@@ -72,6 +73,7 @@ barista2.addEventListener('ended', (event) => {
     var ctx3 = c3.getContext("2d");
     ctx3.clearRect(0, 10, 400, 400);
     ordered = true;
+    cafemusic.play();
 });
 
 drink.addEventListener('click', (event) => {
@@ -113,11 +115,13 @@ span.onclick = function() {
     barista1.currentTime = 0;
     barista2.currentTime = 0;
     student.currentTime = 0;
+    cafemusic.play();
 
 }
 
 span2.onclick = function() {
     modal2.style.display = "none";
+    cafemusic.play();
 }
 
 window.onclick = function(event) {
@@ -130,5 +134,6 @@ window.onclick = function(event) {
         barista1.currentTime = 0;
         barista2.currentTime = 0;
         student.currentTime = 0;
+        cafemusic.play();
     }
 }

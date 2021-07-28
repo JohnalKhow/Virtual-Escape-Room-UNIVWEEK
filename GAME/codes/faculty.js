@@ -1,6 +1,5 @@
 var span = document.getElementsByClassName("close")[0];
 var modal = document.getElementById("myModal");
-var passage = document.getElementById("passage");
 var pigpen = document.getElementById("pigpen");
 var code = document.getElementById("code");
 var btn = document.getElementById("btn");
@@ -11,12 +10,12 @@ var watched = false;
 //CONTROLLED BY .play() function
 var sound = new Audio('assets/audio/Classroom, Faculty Room, Computer Lab.mp3');
 sound.loop = true;
+
 //INITIALIZE ALL OBJECTS
 window.onload = function() {
     sound.play();
     code.style.display = "none";
     btn.style.display = "none";
-    passage.style.display = "none";
     pigpen.style.display = "none";
     var c = document.getElementById("gameboard");
     var ctx = c.getContext("2d");
@@ -27,20 +26,11 @@ window.onload = function() {
 //EACH OBJECT MUST HAVE A CORRESPONDING EVENT LISTENER
 gameboard.addEventListener('click', (event) => {
     console.log('clicked canvas');
-    passage.style.display = "none";
     pigpen.style.display = "block";
     modal.style.display = "block";
     code.style.display = "block";
     btn.style.display = "block";
 });
-
-note1.addEventListener('click', (event) => {
-    if (encoded) {
-        window.location.href = "Museum.html";
-    }
-
-});
-
 
 
 btn.onclick = function() {
@@ -51,11 +41,7 @@ btn.onclick = function() {
         code.style.display = "none";
         btn.style.display = "none";
         pigpen.style.display = "none";
-        passage.style.display = "block";
-        encoded = true;
-        var c2 = document.getElementById("note1");
-        var ctx2 = c2.getContext("2d");
-        ctx2.clearRect(0, 10, 790, 560);
+        window.location.href = "Museum.html";
     }
 }
 

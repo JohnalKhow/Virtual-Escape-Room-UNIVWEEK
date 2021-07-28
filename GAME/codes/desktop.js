@@ -26,7 +26,7 @@ btn.onclick = function() {
         console.log("if entered");
         var c = document.getElementById("gameboard");
         var ctx = c.getContext("2d");
-        ctx.strokeRect(0, 10, 70, 90);
+        ctx.strokeRect(0, 10, 100, 125);
         logged = true;
     }
 }
@@ -34,6 +34,8 @@ btn.onclick = function() {
 gameboard.addEventListener('click', (event) => {
     console.log('clicked canvas');
     if (logged) {
+        sound.pause();
+        sound.currentTime = 0;
         vidplayer.style.display = "block";
         modalVid.style.display = "block";
         video.play();
