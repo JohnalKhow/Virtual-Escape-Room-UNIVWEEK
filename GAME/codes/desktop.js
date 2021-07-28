@@ -18,7 +18,7 @@ window.onload = function() {
 btn.onclick = function() {
     var password = document.getElementById("password").value;
     console.log(password);
-    if (password == "sunrise roast") {
+    if (password == "sunrise roast" || password == "SUNRISE ROAST") {
         modal.style.display = "none";
         console.log("if entered");
         var c = document.getElementById("gameboard");
