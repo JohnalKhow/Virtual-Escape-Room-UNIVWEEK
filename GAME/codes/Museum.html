@@ -16,14 +16,17 @@
                 <input id="form" class="form-control" placeholder="0000" name="email" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />>
                 <input id="btn" type="submit" class="btn-control" value="ENTER">
             </div>
-            <canvas id="ipad" class="object" width="185 " height="200" style=" top:22vw; left:20vw; position: absolute;"></canvas>
+            <canvas id="ipad" class="object" width="200 " height="300" style=" top:22vw; left:20vw; position: absolute;"></canvas>
+            <video controls id="video1" style="width: 100%; height: 100%; margin-left: 0%; display: none;">
+                <source src="assets/videos/ipad.mp4" type="video/mp4">
+            </video>
             <img id="safe" src="assets/images/safe.jfif" style="width: 80%; height: 70%;">
         </div>
 
     </div>
     <img id="bg" src="assets/images/Museum.png">
 
-    <canvas id="gameboard" class="object" width="185 " height="200" style=" top:22vw; left:49vw; position: absolute;"></canvas>
+    <canvas id="gameboard" class="object" width="260 " height="260" style=" top:23vw; left:47.5vw; position: absolute;"></canvas>
 
 
 
