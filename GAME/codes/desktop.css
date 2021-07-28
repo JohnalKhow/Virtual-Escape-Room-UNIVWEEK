@@ -38,14 +38,14 @@ body {
 
 .modal-content-2 {
     position: absolute;
-    top: -16.5vw;
-    left: 6vw;
+    top: -26.75vw;
+    left: -18vw;
     background-color: black;
     margin: 19% auto;
     padding: 50px;
     border: 1px solid #888;
-    width: 50%;
-    height: 60%;
+    width: 103%;
+    height: 124%;
 }
 
 .back {

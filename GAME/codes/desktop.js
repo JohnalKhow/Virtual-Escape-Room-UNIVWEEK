@@ -11,6 +11,7 @@ sound.loop = true;
 
 //INITIALIZE ALL OBJECTS
 window.onload = function() {
+    sound.play();
     modal.style.display = "block";
     modalVid.style.display = "none";
     vidplayer.style.display = "none";
