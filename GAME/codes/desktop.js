@@ -27,7 +27,7 @@ btn.onclick = function() {
         console.log("if entered");
         var c = document.getElementById("gameboard");
         var ctx = c.getContext("2d");
-        ctx.strokeRect(0, 10, 100, 125);
+        ctx.clearRect(0, 10, 100, 125);
         logged = true;
     }
 }
