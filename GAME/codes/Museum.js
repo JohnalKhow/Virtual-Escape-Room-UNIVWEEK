@@ -34,6 +34,10 @@ gameboard.addEventListener('click', (event) => {
 ipad.addEventListener('click', (event) => {
     sound.pause();
     video.style.display = "block";
+    modal.style.width = "100%";
+    modal.style.height = "100%";
+    modal.style.left = "-10vw";
+    modal.style.top = "-10vw";
     btn.style.display = "none";
     form.style.display = "none";
     image.style.display = "none";
@@ -56,10 +60,10 @@ btn.onclick = function() {
         safe.play();
         modal.style.display = "none";
         modal.style.display = "block";
-        document.getElementById("safe").src = "assets/images/open-safe.jpg";
+        document.getElementById("safe").src = "assets/images/open-safe.png";
         var b = document.getElementById("ipad");
         var ctx = b.getContext("2d");
-        ctx.clearRect(0, 10, 170, 160);
+        ctx.strokeRect(0, 10, 330, 218);
     }
 }
 

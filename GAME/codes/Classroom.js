@@ -2,12 +2,12 @@
 var modal = document.getElementById("myModal");
 var video = document.getElementById("video1");
 var watched = false;
-var doorModal = document.getElementById("doorModal");
-var doorRiddle = false;
 var button = document.getElementById("start");
+var videoModal = document.getElementById("vidModal");
 //INIT AUDIO FILES 
 //CONTROLLED BY .play() function
-var sound = new Audio('assets/audio/Classroom-V1.mp3');
+var gossipVideo = document.getElementById("video1");
+var classroomImage = document.getElementById("theatre");
 var backmusic = new Audio('assets/audio/Classroom, Faculty Room, Computer Lab.mp3')
 backmusic.loop = true;
 
@@ -25,7 +25,9 @@ window.onload = function() {
 //EACH OBJECT MUST HAVE A CORRESPONDING EVENT LISTENER
 GIcon.addEventListener('click', (event) => {
     console.log('clicked canvas');
-    sound.play();
+    gossipVideo.play();
+    videoModal.style.display = "block";
+    classroomImage.src = "assets/images/black.jpg";
 });
 
 //MODAL HANDLING
@@ -40,11 +42,13 @@ span.onclick = function() {
 */
 
 button.onclick = function(){
-    window.location.href = "Locker.html"
+    window.location.href = "Locker.html";
 }
 
-sound.onended = function() {
+gossipVideo.onended = function() {
     watched = true;
+    videoModal.style.display = "none";
+    classroomImage.src = "assets/images/Classroom.png";
     modal.style.display = "block";
 }
 /*

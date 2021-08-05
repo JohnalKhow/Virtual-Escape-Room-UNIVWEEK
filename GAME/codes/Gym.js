@@ -5,6 +5,8 @@ var watched = false;
 var heard = false;
 var doorModal = document.getElementById("doorModal");
 var doorRiddle = false;
+var gymImage = document.getElementById("theatre");
+
 //INIT AUDIO FILES 
 //CONTROLLED BY .play() function
 var backmusic = new Audio('assets/audio/Auditorium.mp3')
@@ -55,6 +57,7 @@ gameboard.addEventListener('click', (event) => {
         modal.style.display = "block";
         backmusic.pause();
         video.play();
+        gymImage.src = "assets/images/black.jpg";
     }
 });
 
@@ -63,6 +66,7 @@ gameboard2.addEventListener('click', (event) => {
         modal.style.display = "block";
         backmusic.pause();
         video.play();
+        gymImage.src = "assets/images/black.jpg";
     }
 });
 
@@ -71,6 +75,7 @@ gameboard3.addEventListener('click', (event) => {
         modal.style.display = "block";
         backmusic.pause();
         video.play();
+        gymImage.src = "assets/images/black.jpg";
     }
 });
 
@@ -79,6 +84,7 @@ gameboard4.addEventListener('click', (event) => {
         modal.style.display = "block";
         backmusic.pause();
         video.play();
+        gymImage.src = "assets/images/black.jpg";
     }
 });
 
@@ -126,6 +132,7 @@ video.onended = function() {
     watched = true;
     modal.style.display = "none";
     heard = true;
+    gymImage.src = "assets/images/theatre.jpg";
 }
 
 window.onclick = function(event) {
