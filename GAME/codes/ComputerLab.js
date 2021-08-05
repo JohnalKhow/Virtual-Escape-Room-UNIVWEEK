@@ -45,9 +45,10 @@ usb.addEventListener('click', (event) => {
         sound.pause();
         modal.style.display = "block";
         threat.style.display = "none";
-        modal.style.width = "50%";
-        modal.style.left = "25vw";
-        modal.style.top = "7vw";
+        modal.style.width = "100%";
+        modal.style.height = "100%";
+        modal.style.left = "-10vw";
+        modal.style.top = "-10vw";
         video.style.display = "block";
         span.style.display = "none";
         video.play();

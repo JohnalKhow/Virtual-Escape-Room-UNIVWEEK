@@ -2,25 +2,30 @@
 <html>
 
 <head>
-    <title>Trial</title>
+    <title>RektikanWHO</title>
     <link rel="stylesheet" type="text/css" href="Classroom.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
+
+
+    <div id="vidModal" class="modal1">
+        <div class="modal-content-video" id="videoModal">
+            <video controls id="video1" style="width: 1900px; height: 1050px;">
+                <source src="assets/videos/Classroom-Audio.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
     <div id="myModal" class="modal">
         <div class="modal-content">
             <p>You have one hour to stop the hacker. Time starts now.<br><br></p>
             <button id="start" type="button" class="btn btn-success">BEGIN</button>
         </div>
-
     </div>
-
-    <div id="doorModal" class="doorModal">
-        <div class="modal-content">
-        </div>
-    </div>
-    <img id="class" src="assets/images/Classroom.png">
+    
+    <img id="theatre" src="assets/images/Classroom.png">
 
     <canvas id="GIcon" class="object" width="20" height="20" style=" top:25.62vw; left:39.5vw; position: absolute;"></canvas>
 
