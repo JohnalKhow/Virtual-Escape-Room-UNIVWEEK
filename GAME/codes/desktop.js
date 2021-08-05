@@ -20,8 +20,9 @@ window.onload = function() {
 
 btn.onclick = function() {
     var password = document.getElementById("password").value;
+    password = password.toUpperCase();
     console.log(password);
-    if (password == "sunrise roast" || password == "SUNRISE ROAST") {
+    if (password == "SUNRISE ROAST") {
         modal.style.display = "none";
         console.log("if entered");
         var c = document.getElementById("gameboard");

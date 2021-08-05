@@ -97,8 +97,9 @@ key.addEventListener('click', (event) => {
 
 btn.onclick = function() {
     var order = document.getElementById("order").value;
+    order = order.toUpperCase();
     console.log(order);
-    if (order == "three c's latte") {
+    if (order == "THREE C'S LATTE") {
         console.log("if entered");
         student.play();
         form.style.display = "none";
