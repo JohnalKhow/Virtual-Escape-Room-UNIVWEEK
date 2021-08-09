@@ -33,7 +33,7 @@ body {
     width: 80%;
     position: relative;
     /* This avoids image to go off the container */
-    height: 650px;
+    height: 700px;
 }
 
 .img-responsive {
