@@ -1,6 +1,6 @@
 var sound = new Audio('assets/audio/Locker BGM.mp3');
 sound.loop = true;
-
+sound.volume = 0.25;
 window.onload = function() {
     sound.play();
     var c = document.getElementById("doorknob");

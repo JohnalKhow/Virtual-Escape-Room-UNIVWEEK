@@ -10,7 +10,7 @@ var gossipVideo = document.getElementById("video1");
 var classroomImage = document.getElementById("theatre");
 var backmusic = new Audio('assets/audio/Classroom Final BGM.mp3')
 backmusic.loop = true;
-
+backmusic.volume = 0.55;
 //INITIALIZE ALL OBJECTS
 window.onload = function() {
     backmusic.play()

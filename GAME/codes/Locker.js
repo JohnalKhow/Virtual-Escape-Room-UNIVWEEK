@@ -6,7 +6,7 @@ var lockerbg = document.getElementById("theatre");
 //CONTROLLED BY .play() function
 var sound = new Audio('assets/audio/Locker BGM.mp3');
 sound.loop = true;
-
+sound.volume = 0.25;
 //INITIALIZE ALL OBJECTS
 window.onload = function() {
     sound.play();
