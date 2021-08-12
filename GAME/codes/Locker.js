@@ -4,7 +4,7 @@ var watched = false;
 var lockerbg = document.getElementById("theatre");
 //INIT AUDIO FILES 
 //CONTROLLED BY .play() function
-var sound = new Audio('assets/audio/Classroom, Faculty Room, Computer Lab.mp3');
+var sound = new Audio('assets/audio/Locker BGM.mp3');
 sound.loop = true;
 
 //INITIALIZE ALL OBJECTS

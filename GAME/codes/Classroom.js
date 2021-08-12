@@ -8,7 +8,7 @@ var videoModal = document.getElementById("vidModal");
 //CONTROLLED BY .play() function
 var gossipVideo = document.getElementById("video1");
 var classroomImage = document.getElementById("theatre");
-var backmusic = new Audio('assets/audio/Classroom, Faculty Room, Computer Lab.mp3')
+var backmusic = new Audio('assets/audio/Classroom Final BGM.mp3')
 backmusic.loop = true;
 
 //INITIALIZE ALL OBJECTS
